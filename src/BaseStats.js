@@ -2,9 +2,11 @@ import "./BaseStats.css";
 
 const BaseStats = (props) => {
     const { hp, attack, defense, speed } = props.stats;
+    const clicker = props.clicker
     return (
         <div className="base-stats">
             <h1>Base Stats</h1>
+            <button className="sp-stats" onClick={clicker}>Check Special Stats</button>
             <table>
                 <tbody>
                     <tr>
